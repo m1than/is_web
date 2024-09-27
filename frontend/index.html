@@ -1,13 +1,128 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="
+https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+" rel="stylesheet">
+  <link rel="stylesheet" href="./src/app/css/index.css">
+
+  <title>Russian Tweeter</title>
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>Russian Tweeter</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <nav id="sidebar" class="navbar">
+        <ul>
+          <li class="navbar__item"><a href="#home">Home</a></li>
+          <li class="navbar__item"><a href="#explore">Explore</a></li>
+          <li class="navbar__item"><a href="#notifications">Notifications</a></li>
+          <li class="navbar__item"><a href="#messages">Messages</a></li>
+          <li class="navbar__item"><a href="#bookmarks">Bookmarks</a></li>
+          <li class="navbar__item"><a href="#lists">Lists</a></li>
+          <li class="navbar__item"><a href="#profile">Profile</a></li>
+          <li class="navbar__item"><a href="#more">More</a></li>
+        </ul>
+        <!-- User Profile at the bottom -->
+        <section id="user-profile" class>
+          <img
+            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=48&ext=jpg&ga=GA1.1.1819120589.1727308800&semt=ais_hybrid"
+            alt="User Profile Picture">
+          <p>@m1than</p>
+        </section>
+      </nav>
+
+      <section id="tweets" class="tweets">
+        <article class="tweets_item">
+          <header>
+            <h2>User Name</h2>
+            <p>@username</p>
+          </header>
+          <div class="tweet_content">
+            <pre>
+              /\
+             /  \
+            /    \
+            |    |
+            </pre>
+          </div>
+          <footer>
+            <button>Like</button>
+            <button>Retweet</button>
+            <button>Comment</button>
+          </footer>
+        </article>
+
+        <article class="tweets_item">
+          <header>
+            <h2>User Name</h2>
+            <p>@username</p>
+          </header>
+          <div class="tweet_content">
+                <pre>
+                  function greet() {
+                    console.log('Hello, World!');
+                  }
+                  greet();
+                </pre>
+          </div>
+          <footer>
+            <button>Like</button>
+            <button>Retweet</button>
+            <button>Comment</button>
+          </footer>
+        </article>
+        <article class="tweets_item">
+          <header>
+            <h2>User Name</h2>
+            <p>@username</p>
+          </header>
+          <div class="tweet_content">
+            <p>H<sub>2</sub>O</p>
+          </div>
+          <footer>
+            <button>Like</button>
+            <button>Retweet</button>
+            <button>Comment</button>
+          </footer>
+        </article>
+
+      </section>
+
+      <aside id="recommendations">
+        <section>
+          <h2>Who to Follow</h2>
+          <ul>
+            <li><a href="#profile1">@User 1</a></li>
+            <li><a href="#profile2">@User 2</a></li>
+            <li><a href="#profile3">@User 3</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Trending Topics about</h2>
+          <ul>
+            <li><a href="#trend1">#TrendingTopic1</a></li>
+            <li><a href="#trend2">#TrendingTopic2</a></li>
+            <li><a href="#trend3">#TrendingTopic3</a></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Russian Tweeter rights reserved</p>
+  </footer>
+</div>
+
+<script defer src="./src/app/scripts/main.js"></script>
+</body>
 </html>
