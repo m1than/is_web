@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Лента</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/feed.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+<header>
+  <h1>Лента</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="profile.html">Профиль</a></li>
+      <li><a href="constructor.html">Конструктор</a></li>
+      <li><a href="feed.html">Лента</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <button id="newPostBtn">Написать пост</button>
+
+  <div class="feed" id="twitterFeed"></div>
+  <div id="preloader" style="display:none;">
+    <p>Загрузка...</p>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2024, Иван Гайфутдинов</p>
+</footer>
+
+<script type="module" src="./dist/api.js" defer></script>
+</body>
+</html>

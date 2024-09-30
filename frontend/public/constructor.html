@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Конструктор</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<header>
+  <h1>Конструктор таблиц</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="profile.html">Профиль</a></li>
+      <li><a href="constructor.html">Конструктор</a></li>
+      <li><a href="feed.html">Лента</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <form id="tableForm">
+    <label>Кол-во строк: <input type="number" name="rows" value="5"></label>
+    <label>Кол-во столбцов: <input type="number" name="cols" value="3"></label>
+    <button type="submit">Сгенерировать</button>
+  </form>
+  <div id="resultContainer"></div>
+</main>
+
+<footer>
+  <p>&copy; 2024, Иван Гайфутдинов</p>
+</footer>
+
+<script src="./dist/constructor.js" defer></script>
+</body>
+</html>
